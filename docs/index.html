@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html"></a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search...">
+    </div>
+    <ul class="list">
+    
+    
+        <li class="item" data-name="sogh">
+            <span class="title namespace ">
+                
+                <span class="namespaceTag">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                </span>
+                
+                
+                    <a href="sogh.html">sogh</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="sogh.blurry"><a href="sogh.html#.blurry">blurry</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+    </ul>
+</div>
+
+    <div class="main">
+        <h1 class="page-title" data-filename="index.html">Index</h1>
+        
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article class="readme content-size"><h1 id="sog-helper">sog-helper</h1>
+<p><a target="_blank" href="https://npmjs.org/package/sog-helper"><img src="http://img.shields.io/npm/v/sog-helper.svg" alt="NPM version"></a> <a target="_blank" href="https://npmjs.org/package/sog-helper"><img src="http://img.shields.io/npm/dm/sog-helper.svg" alt="Downloads"></a></p>
+<p>The library of helpers.</p>
+<h5 id="this-library-offers-a-lot-of-different-useful-helpers.">This library offers a lot of different useful helpers.</h5>
+<h2 id="navigation">Navigation</h2>
+<ul>
+<li><a href="#installation-and-usage">Installation and Usage</a></li>
+<li><a href="#available-helpers">Available Helpers</a></li>
+</ul>
+<h2 id="installation-and-usage">Installation and Usage</h2>
+<p>The library can be loaded as a standalone script.</p>
+<p>Install the library with <code>npm install sog-helper</code></p>
+<pre class="prettyprint source lang-html"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;build/output/sog-helper.min.js&quot;>&lt;/script>
+&lt;script type=&quot;text/javascript&quot;>
+
+    sogh.blurry('div#container-id table tbody td:nth-child(6) a');
+
+    // Or
+    sogh.blurry([
+        'div#container-id table tbody td:nth-child(6) a',
+        'div#container-id table tbody td:nth-child(7)'
+    ]);
+&lt;/script>
+</code></pre>
+<p><a href="#navigation">⬆ navigation</a></p>
+<h2 id="available-helpers">Available Helpers</h2>
+<p>Below is a list of all available helpers:</p>
+<ul>
+<li><a href="#blurry">Blurry</a></li>
+</ul>
+<p><a href="#navigation">⬆ navigation</a></p>
+<h2 id="helpers">Helpers</h2>
+<h5 id="blurry">Blurry</h5>
+<p>This helper makes blurry hidden text. For instance it is necessary to hide all email address on the page.</p>
+<p><em>example</em>:</p>
+<pre class="prettyprint source lang-javascript"><code>sogh.blurry('div#container-id table tbody td:nth-child(6) a');
+
+// Or
+sogh.blurry([
+    'div#container-id table tbody td:nth-child(6) a',
+    'div#container-id table tbody td:nth-child(7)'
+]);
+</code></pre>
+<p><a href="#navigation">⬆ navigation</a></p>
+<hr>
+<h2 id="license-(mit)">License (MIT)</h2>
+<pre class="prettyprint source"><code>Copyright (c) 2020 Slave of God &lt;iamtheslaveofgod@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre></article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer class="content-size">
+            <div class="footer">
+                Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Tue Feb 18 2020 21:24:48 GMT+0200 (Eastern European Standard Time)
+            </div>
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

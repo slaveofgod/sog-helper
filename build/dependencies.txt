@@ -1,0 +1,2 @@
+../src/core/core.js
+../src/helper/blurry.js
