@@ -38,6 +38,10 @@ Install the library with `npm install sog-helper`
 Below is a list of all available helpers:
 
  * [Blurry](#blurry)
+ * [Camel Case String](#camel-case-string)
+ * [Sluggable](#sluggable)
+ * [Words](#words)
+ * [Camel Case](#camel-case)
 
 [⬆ navigation](#navigation)
 
@@ -56,6 +60,58 @@ sogh.blurry([
     'div#container-id table tbody td:nth-child(6) a',
     'div#container-id table tbody td:nth-child(7)'
 ]);
+```
+
+[⬆ navigation](#navigation)
+
+---
+
+##### Camel Case String
+
+Convert any string to camelcase string.
+
+_example_:
+```javascript
+sogh.camelCaseString('user_name_and_email'); // return UserNameAndEmail
+```
+
+[⬆ navigation](#navigation)
+
+---
+
+##### Sluggable
+
+Convert any string to sluggable string.
+
+_example_:
+```javascript
+sogh.sluggable('user name and email'); // return user-name-and-email
+```
+
+[⬆ navigation](#navigation)
+
+---
+
+##### Words
+
+Convert string to words.
+
+_example_:
+```javascript
+sogh.words('user_name_and_email'); // return ['user', 'name', 'and', 'email']
+```
+
+[⬆ navigation](#navigation)
+
+---
+
+##### Camel Case
+
+Convert the input array to camel case.
+
+_example_:
+```javascript
+sogh.camelCase(['user', 'name', 'and', 'email']); // return ['User', 'Name', 'And', 'Email']
 ```
 
 [⬆ navigation](#navigation)

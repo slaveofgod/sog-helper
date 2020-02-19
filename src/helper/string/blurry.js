@@ -1,8 +1,8 @@
 /**
  * @function
  * @description
- * <p>Make Blurry Hidden Text</p>
- * @param {String|Array} queries CSS queries of elements which content has to be hidden
+ * <p>Make blurry hidden text.</p>
+ * @param {String|Array} queries CSS queries of elements which content has to be hidden.
  * @example
  * sogh.blurry('div#container-id table tbody td:nth-child(6) a');
  *

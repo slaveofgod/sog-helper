@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.0.0 revision - (PROFILER)
+ * SOG Helper Library v1.1.0 revision 677a190 (PROFILER)
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -20,7 +20,7 @@ var _typeLookup = function() {
   }
   return result;
 }();
-var sogh = {version:"1.0.0", revision:"-", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.1.0", revision:"677a190", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
@@ -46,6 +46,40 @@ if (typeof exports !== "undefined") {
       node.classList.add("sog-blurry");
     }
   }
+};
+sogh.camelCaseString = function(input) {
+  var words = sogh.toWords(input);
+  return sogh.toCamelCase(words);
+};
+sogh.sluggable = function(input) {
+  var words = sogh.toWords(input);
+  return words.join("-");
+};
+sogh.convertToString = function(input) {
+  if (input) {
+    if (typeof input === "string") {
+      return input;
+    }
+    return String(input);
+  }
+  return "";
+};
+sogh.words = function(input) {
+  input = sogh.convertToString(input);
+  var regex = /[A-Z\xC0-\xD6\xD8-\xDE]?[a-z\xDF-\xF6\xF8-\xFF]+|[A-Z\xC0-\xD6\xD8-\xDE]+(?![a-z\xDF-\xF6\xF8-\xFF])|\d+/g;
+  return input.match(regex);
+};
+sogh.camelCase = function(inputArray, skipFirst) {
+  var result = "";
+  for (var i = 0, len = inputArray.length; i < len; i++) {
+    var currentStr = inputArray[i];
+    var tempStr = currentStr.toLowerCase();
+    if (true === skipFirst && i != 0 || true !== skipFirst) {
+      tempStr = tempStr.substr(0, 1).toUpperCase() + tempStr.substr(1);
+    }
+    result += tempStr;
+  }
+  return result;
 };
 
 
