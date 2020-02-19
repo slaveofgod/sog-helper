@@ -8,7 +8,7 @@
  * sogh.sluggable('user name and email'); // return user-name-and-email
  */
 sogh.sluggable = function (input) {
-    var words = sogh.toWords(input);
+    var words = sogh.words(input);
 
     return words.join('-');
 };

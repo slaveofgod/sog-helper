@@ -8,7 +8,7 @@
  * sogh.camelCaseString('user_name_and_email'); // return UserNameAndEmail
  */
 sogh.camelCaseString = function (input) {
-    var words = sogh.toWords(input);
+    var words = sogh.words(input);
 
     return sogh.toCamelCase(words);
 };

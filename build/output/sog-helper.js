@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.1.0 revision 677a190
+ * SOG Helper Library v1.1.2 revision 0bc2b63
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -20,12 +20,11 @@ var _typeLookup = function() {
   }
   return result;
 }();
-var sogh = {version:"1.1.0", revision:"677a190", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.1.2", revision:"0bc2b63", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
 ;sogh.blurry = function(queries) {
-  console.log("sogh.blurry");
   if (false === Array.isArray(queries)) {
     queries = [queries];
   }
@@ -48,11 +47,11 @@ if (typeof exports !== "undefined") {
   }
 };
 sogh.camelCaseString = function(input) {
-  var words = sogh.toWords(input);
+  var words = sogh.words(input);
   return sogh.toCamelCase(words);
 };
 sogh.sluggable = function(input) {
-  var words = sogh.toWords(input);
+  var words = sogh.words(input);
   return words.join("-");
 };
 sogh.convertToString = function(input) {
