@@ -10,5 +10,5 @@
 sogh.camelCaseString = function (input) {
     var words = sogh.words(input);
 
-    return sogh.toCamelCase(words);
+    return sogh.camelCase(words);
 };
