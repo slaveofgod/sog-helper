@@ -13,8 +13,6 @@
  * ]);
  */
 sogh.blurry = function (queries) {
-    console.log('sogh.blurry');
-
     if (false === Array.isArray(queries)) {
         queries = [queries];
     }
