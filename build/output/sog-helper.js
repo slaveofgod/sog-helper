@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.1.3 revision 0c67bba
+ * SOG Helper Library v1.1.4 revision 168868c
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -20,7 +20,7 @@ var _typeLookup = function() {
   }
   return result;
 }();
-var sogh = {version:"1.1.3", revision:"0c67bba", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.1.4", revision:"168868c", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
