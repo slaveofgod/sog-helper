@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.1.4 revision 168868c (PROFILER)
+ * SOG Helper Library v1.2.0 revision a0c1db6 (PROFILER)
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -20,7 +20,7 @@ var _typeLookup = function() {
   }
   return result;
 }();
-var sogh = {version:"1.1.4", revision:"168868c", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.2.0", revision:"a0c1db6", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
@@ -46,10 +46,6 @@ if (typeof exports !== "undefined") {
     }
   }
 };
-sogh.camelCaseString = function(input) {
-  var words = sogh.words(input);
-  return sogh.camelCase(words);
-};
 sogh.sluggable = function(input) {
   var words = sogh.words(input);
   return words.join("-");
@@ -68,7 +64,8 @@ sogh.words = function(input) {
   var regex = /[A-Z\xC0-\xD6\xD8-\xDE]?[a-z\xDF-\xF6\xF8-\xFF]+|[A-Z\xC0-\xD6\xD8-\xDE]+(?![a-z\xDF-\xF6\xF8-\xFF])|\d+/g;
   return input.match(regex);
 };
-sogh.camelCase = function(inputArray, skipFirst) {
+sogh.camelCase = function(input, skipFirst) {
+  var inputArray = sogh.words(input);
   var result = "";
   for (var i = 0, len = inputArray.length; i < len; i++) {
     var currentStr = inputArray[i];

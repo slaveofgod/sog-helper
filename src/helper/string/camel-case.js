@@ -1,14 +1,16 @@
 /**
  * @function
  * @description
- * <p>Convert the input array to camel case.</p>
- * @param {Array} inputArray Array to convert.
+ * <p>Convert any string to camelcase string.</p>
+ * @param {String} input String to convert.
  * @param {Boolean} skipFirst Skip first word.
- * @returns {Array}
+ * @returns {String}
  * @example
- * sogh.camelCase(['user', 'name', 'and', 'email']); // return ['User', 'Name', 'And', 'Email']
+ * sogh.camelCase('user_name_and_email'); // return UserNameAndEmail
  */
-sogh.camelCase = function (inputArray, skipFirst) {
+sogh.camelCase = function (input, skipFirst) {
+    var inputArray = sogh.words(input);
+
     var result = "";
     for(var i = 0 , len = inputArray.length; i < len; i++) {
         var currentStr = inputArray[i];

@@ -1,7 +1,6 @@
 ../src/core/core.js
 ../src/helper/string/blurry.js
-../src/helper/string/camel_case_string.js
 ../src/helper/string/sluggable.js
 ../src/helper/string/string.js
 ../src/helper/string/words.js
-../src/helper/array/camel_case.js
+../src/helper/string/camel-case.js

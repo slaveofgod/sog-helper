@@ -1,6 +1,6 @@
 # sog-helper
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![DeepScan grade][deepscan-image]][deepscan-url]
 
 The library of helpers.
 
@@ -38,10 +38,9 @@ Install the library with `npm install sog-helper`
 Below is a list of all available helpers:
 
  * [Blurry](#blurry)
- * [Camel Case String](#camel-case-string)
+ * [Camel Case](#camel-case)
  * [Sluggable](#sluggable)
  * [Words](#words)
- * [Camel Case](#camel-case)
 
 [⬆ navigation](#navigation)
 
@@ -66,13 +65,13 @@ sogh.blurry([
 
 ---
 
-##### Camel Case String
+##### Camel Case
 
 Convert any string to camelcase string.
 
 _example_:
 ```javascript
-sogh.camelCaseString('user_name_and_email'); // return UserNameAndEmail
+sogh.camelCase('user_name_and_email'); // return UserNameAndEmail
 ```
 
 [⬆ navigation](#navigation)
@@ -99,19 +98,6 @@ Convert string to words.
 _example_:
 ```javascript
 sogh.words('user_name_and_email'); // return ['user', 'name', 'and', 'email']
-```
-
-[⬆ navigation](#navigation)
-
----
-
-##### Camel Case
-
-Convert the input array to camel case.
-
-_example_:
-```javascript
-sogh.camelCase(['user', 'name', 'and', 'email']); // return ['User', 'Name', 'And', 'Email']
 ```
 
 [⬆ navigation](#navigation)
@@ -145,5 +131,11 @@ THE SOFTWARE.
 
 [npm-url]: https://npmjs.org/package/sog-helper
 [npm-image]: http://img.shields.io/npm/v/sog-helper.svg
+
+[travis-url]: https://travis-ci.org/slaveofgod/sog-helper
+[travis-image]: http://img.shields.io/travis/slaveofgod/sog-helper.svg
+
+[deepscan-url]: https://deepscan.io/dashboard#view=project&tid=7185&pid=9698&bid=129162
+[deepscan-image]: https://deepscan.io/api/teams/7185/projects/9698/branches/129162/badge/grade.svg
 
 [downloads-image]: http://img.shields.io/npm/dm/sog-helper.svg
