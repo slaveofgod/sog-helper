@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.2.0 revision a0c1db6 (PROFILER)
+ * SOG Helper Library v1.2.0 revision 27189c7 (PROFILER)
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -12,15 +12,7 @@
     }
 }(this, function () {
 
-var _typeLookup = function() {
-  var result = {};
-  var names = ["Array", "Object", "Function", "Date", "RegExp", "Float32Array"];
-  for (var i = 0; i < names.length; i++) {
-    result["[object " + names[i] + "]"] = names[i].toLowerCase();
-  }
-  return result;
-}();
-var sogh = {version:"1.2.0", revision:"a0c1db6", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.2.0", revision:"27189c7", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
