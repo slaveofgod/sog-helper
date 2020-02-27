@@ -1,5 +1,5 @@
 /*
- * SOG Helper Library v1.2.0 revision 27189c7 (DEBUG PROFILER)
+ * SOG Helper Library v1.2.1 revision ea7d535 (DEBUG PROFILER)
  * Copyright 2019-2020 Slave of God <iamtheslaveofgod@gmail.com>. All rights reserved.
  */
 ;(function (root, factory) {
@@ -12,7 +12,7 @@
     }
 }(this, function () {
 
-var sogh = {version:"1.2.0", revision:"27189c7", config:{}, common:{}, validators:{}};
+var sogh = {version:"1.2.1", revision:"ea7d535", config:{}, common:{}, validators:{}};
 if (typeof exports !== "undefined") {
   exports.sogh = sogh;
 }
